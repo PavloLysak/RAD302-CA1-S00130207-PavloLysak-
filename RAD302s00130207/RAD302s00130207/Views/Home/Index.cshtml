@@ -1,0 +1,24 @@
+﻿@model IEnumerable<RAD302s00130207.Models.Order>
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">nwMap Application seeking addreses of orders</p>
+   
+</div>
+<div class="row">
+    <div class="col-md-2">
+      <div class="panel panel-primary">
+          <div class="panel-heading">Address</div>
+          <div class="panel-body" style="overflow-x: hidden; height:480px">
+          @foreach(var item in Model)
+          {
+              <p>@item.OrderID</p>
+          }
+      </div>
+    </div>
+    <div class="col-md-4">
+     
+    </div>
+    <div class="col-md-6">
+        
+    </div>
+</div>
