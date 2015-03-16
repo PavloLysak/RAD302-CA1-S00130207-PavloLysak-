@@ -11,13 +11,18 @@ namespace RAD302s00130207.Controllers
     public class HomeController : Controller
     {
         public nwEntitites db = new nwEntitites();
+        private MovieDb dbMovie = new MovieDb();
 
     
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
 
-            return View(db.Orders);
+            //dbBlog.Blogs.ToList();
+            return View(dbMovie.Movies);
+
+             //return View(db.Orders);
+             
         }
     }
 }

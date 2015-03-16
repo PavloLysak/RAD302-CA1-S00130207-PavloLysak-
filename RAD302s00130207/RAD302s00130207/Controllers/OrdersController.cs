@@ -12,18 +12,23 @@ using RAD302s00130207.Models;
 
 namespace RAD302s00130207.Controllers
 {
+    [RoutePrefix("api/ord")]
+
     public class OrdersController : ApiController
     {
         private nwEntitites db = new nwEntitites();
 
         // GET: api/Orders
+        [Route("getall")]
         public IQueryable<Order> GetOrders()
         {
             return db.Orders;
         }
 
+
         // GET: api/Orders/5
         [ResponseType(typeof(Order))]
+        [Route("getord/{id:int}")]
         public IHttpActionResult GetOrder(int id)
         {
             Order order = db.Orders.Find(id);
@@ -34,6 +39,22 @@ namespace RAD302s00130207.Controllers
 
             return Ok(order);
         }
+
+        //[Route("getordaddr/{id:int}")]
+        //public IHttpActionResult GetOrderAddress(int id)
+        //{
+        //    Order ord = db.Orders.Find(id);
+        //    if(ord==null)
+        //        return NotFound();
+        //    return Ok(new
+        //    {
+        //        street = ord.ShipAddress,
+        //        city = ord.ShipCity,
+        //        country = ord.ShipCountry
+        //    });
+        //}
+
+
 
         // PUT: api/Orders/5
         [ResponseType(typeof(void))]

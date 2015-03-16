@@ -1,5 +1,4 @@
-###Map Application for Nothwind
-Sample application to query Northwind and display the address and show a map(courtesy of Google Map API)
+###Made by Pavlo lysak (s00130207)
 
 
 ###Steps
