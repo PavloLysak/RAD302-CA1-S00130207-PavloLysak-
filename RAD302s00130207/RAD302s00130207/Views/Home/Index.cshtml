@@ -51,19 +51,42 @@
         geocoder = new google.maps.Geocoder();
         var latlng = new google.maps.LatLng(-34.397, 150.644);
         var mapOptions = {
-            zoom: 8,
+            zoom: 4,
             center: latlng
         }
         map = new google.maps.Map(document.getElementById('gmap'), mapOptions);
     }
-
+    
 
 </script>
 <div class="jumbotron">
     <h1>RAD302</h1>
-    <p class="lead">nwMap Application seeking addreses of orders</p>
+    <p class="lead">Movie database by Pavlo Lysak (s00130207)</p>
    
 </div>
+
+
+
+@*Custom search bar, search over imdb.com
+
+    <div><script>
+        (function () {
+            var cx = '012625075946676838028:5urqqg4wloo';
+            var gcse = document.createElement('script');
+            gcse.type = data.MovieTitle;
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+
+    </script>*@
+
+<gcse:search></gcse:search></div>
+
+
 <div class="row">
     <div class="col-md-2">
         <div class="panel panel-primary">
