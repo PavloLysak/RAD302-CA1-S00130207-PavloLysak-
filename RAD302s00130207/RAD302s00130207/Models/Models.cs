@@ -14,13 +14,13 @@ namespace RAD302s00130207.Models
         {
             var lmovies = new List<Movies>()
             {
-                new Movies(){MovieTitle = "2012", MovieCountry = "Ireland"
+                new Movies(){MovieTitle = "Transformers", MovieCountry = "USA"
                 },
-                new Movies(){MovieTitle = "as", MovieCountry = "Russia"
+                new Movies(){MovieTitle = "Inception", MovieCountry = "Usa"
                 },
-                new Movies(){MovieTitle = "201dsfs2", MovieCountry = "Ireland"
+                new Movies(){MovieTitle = "Taxi", MovieCountry = "France "
                 },
-                new Movies(){MovieTitle = "20sdfds12", MovieCountry = "Ireland"
+                new Movies(){MovieTitle = "Good Neighbours", MovieCountry = "Canada "
                 }
 
 
